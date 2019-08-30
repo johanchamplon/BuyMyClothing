@@ -1,7 +1,13 @@
-import CartActionTypes from './cart.types';
+import { cartActionTypes } from './cart.types';
 
 
 export const ToggleCartHidden = () => ({
-    type: CartActionTypes.TOGGLE_CART_HIDDEN
+    type: cartActionTypes.TOGGLE_CART_HIDDEN
+})
+
+
+export const addItem = item => ({
+    type: cartActionTypes.ADD_ITEM,
+    payload: item
 })
 
